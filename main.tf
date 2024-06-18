@@ -7,13 +7,9 @@ terraform {
 }
 
 variable "pingdom_api_token" {}
-variable "solarwinds_user" {}
-variable "solarwinds_passwd" {}
 
 provider "pingdom" {
   api_token         = var.pingdom_api_token
-  solarwinds_user   = var.solarwinds_user
-  solarwinds_passwd = var.solarwinds_passwd
 }
 
 resource "pingdom_check" "example" {
