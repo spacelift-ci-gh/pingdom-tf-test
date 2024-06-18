@@ -10,7 +10,7 @@ variable "pingdom_api_token" {}
 
 variable "secret_cookie" {
     type = string
-    default = "test=cookie"
+    default = "test=cookie2"
     sensitive = true
 }
 
