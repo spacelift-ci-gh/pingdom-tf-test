@@ -17,4 +17,8 @@ resource "pingdom_check" "example" {
   name        = "my http check"
   host        = "example.com"
   resolution  = 5
+  requestheaders = {
+    "User-Agent" = "Pingdom.com_bot_version_1.4_(http://www.pingdom.com/)",
+    "Cookie"     = "test=cookie"
+  }
 }
